@@ -1,101 +1,220 @@
-import Image from "next/image";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main>
+      {/* HERO SECTION */}
+      <section
+        id='hero'
+        className='flex items-center justify-center bg-transparent py-24'
+      >
+        <div className='text-white w-max'>
+          <h1 className='text-[84px]'>Hello there,</h1>
+          <p className='text-4xl mt-3'>
+            I bring ideas to life; one pixel at a time!
+          </p>
+          <p className='text-4xl pt-6'>
+            Ready to create something amazing together?
+          </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href='#contact'
+            className='flex items-center w-max px-4 py-2.5 rounded-[5px] rounded-br-none bg-[#FFC700] my-12 hover:*:'
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+            <span className='text-[#020203] font-bold'>Talk to me</span>{' '}
+            <img
+              src='/icons/angle-right-black.svg'
+              alt='icon'
+              className='ml-2.5'
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </Link>
+
+          <div className='flex items-center gap-3'>
+            <a href={'https://dribbble.com/Crusoe14'} target='_blank'>
+              <img src='/socials/dribbble.svg' alt='social' />
+            </a>
+            <a href={'https://www.behance.net/godwinok'} target='_blank'>
+              <img src='/socials/behance.svg' alt='social' />
+            </a>
+            <a href={'https://www.behance.net/godwinok'} target='_blank'>
+              <img src='/socials/github.svg' alt='social' />
+            </a>
+            <a
+              href={'https://www.linkedin.com/in/crusoeokwong/'}
+              target='_blank'
+            >
+              <img src='/socials/linkedin.svg' alt='social' />
+            </a>
+            <a href={'#'} target='_blank'>
+              <img src='/socials/x.svg' alt='social' />
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* WORK SECTION */}
+      <section id='work' className='h-[50vh] text-2xl bg-gray-300'>
+        <h1>Work Section</h1>
+      </section>
+
+      {/* CASE STUDIES SECTION */}
+      <section id='case-studies' className='bg-transparent px-16 py-14'>
+        <div className='text-white text-center flex justify-center w-full'>
+          <div className='w-[45%]'>
+            <h3 className='text-4xl font-bold'>Case Studies</h3>
+            <p className='text-lg mt-3'>
+              Unpacking the Journey from Concept to Completion. Explore the
+              thought process, challenges, and design solutions that drive
+              impactful user experiences
+            </p>
+          </div>
+        </div>
+
+        {/* CASE STUDY 1 */}
+        <div className='grid grid-cols-2 gap-14 items-center mt-24'>
+          <div>
+            <div className='bg-[#FFF6E9] text-[#FFA217] font-bold text-lg py-[1px] px-4 w-max rounded-full'>
+              Construction
+            </div>
+            <div className='text-white mt-6'>
+              <h3 className='text-[28px] font-bold'>
+                Marigold construction and Remodelling
+              </h3>
+              <p className='text-lg mt-4'>
+                Marigold has transformed visions and ideas into steel, masonry,
+                and concrete realities. Our clients represent a broad spectrum
+                of industries and business sectors, allowing us the opportunity
+                to apply our extensive experience, know-how, and passion for
+                excellence to each specific project in order to successfully
+                handle every challenge and special circumstance.
+              </p>
+            </div>
+            <a
+              href='https://www.behance.net/gallery/181797551/Marigold-Construction-and-Remodeling-website-UI'
+              target='_blank'
+              className='flex items-center w-max px-4 py-2.5 rounded-[5px] rounded-br-none bg-[#FFA217] mt-8 hover:*:'
+            >
+              <span className='text-[#020203] font-bold'>View case study</span>{' '}
+              <img
+                src='/icons/angle-right-black.svg'
+                alt='icon'
+                className='ml-2.5'
+              />
+            </a>
+          </div>
+          <div className='flex justify-end'>
+            <Image
+              src='/images/case-studies/marigold.png'
+              alt='case-study'
+              width={540}
+              height={400}
+            />
+          </div>
+        </div>
+
+        {/* CASE STUDY 2 */}
+        <div className='grid grid-cols-2 gap-14 items-center mt-28'>
+          <div className='flex justify-start'>
+            <Image
+              src='/images/case-studies/x.png'
+              alt='case-study'
+              width={540}
+              height={400}
+            />
+          </div>
+          <div>
+            <div className='bg-[#D0E6FF] text-[#000AFF] font-bold text-lg py-[1px] px-4 w-max rounded-full'>
+              Social
+            </div>
+            <div className='text-white mt-6'>
+              <h3 className='text-[28px] font-bold'>
+                Improving X’s (FKA Twitter) UI for a better user experience
+              </h3>
+              <p className='text-lg mt-4'>
+                What if X users were able to find exactly what it is they are
+                looking for when searching for topics of interest or looking up
+                the trending topics?
+              </p>
+              <p className='text-lg mt-4'>
+                What if X had an algorithm that could narrow down a user’s
+                search result to the exact or related content the user is
+                searching for, filtering all unrelated contents?
+              </p>
+              <p className='text-lg mt-4'>
+                Follow this case study to find out.
+              </p>
+            </div>
+            <a
+              href='https://www.behance.net/gallery/181196455/Enhancing-Xs-%28formerly-Twitter%29-UI-for-a-better-UX'
+              target='_blank'
+              className='flex items-center w-max px-4 py-2.5 rounded-[5px] rounded-br-none bg-[#000AFF] mt-8 hover:*:'
+            >
+              <span className='text-white font-bold'>View case study</span>{' '}
+              <img
+                src='/icons/angle-right-white.svg'
+                alt='icon'
+                className='ml-2.5'
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* CASE STUDY 3 */}
+        <div className='grid grid-cols-2 gap-14 items-center mt-28'>
+          <div>
+            <div className='bg-[#D0E6FF] text-[#2AB090] font-bold text-lg py-[1px] px-4 w-max rounded-full'>
+              Service
+            </div>
+            <div className='text-white mt-6'>
+              <h3 className='text-[28px] font-bold'>Ayuda Web UI Design</h3>
+              <p className='text-lg mt-4'>
+                Ayuda is a website that intends to allow users search for and
+                seek professional help or services from certified professionals
+                online. Ayuda is derived from the Spanish interpretation of the
+                word 'Help'.
+              </p>
+              <p className='text-lg mt-4'>
+                Ayuda doesn’t just let you hire freelancers; you get to hire
+                offline service providers as well: Handymen, Dog walkers,
+                Nannies and babysitters, mechanics, gardeners, etc. Ayuda brings
+                you the help you need at any time right to your doorstep!
+              </p>
+            </div>
+            <a
+              href='https://www.behance.net/gallery/180180089/Ayuda-web-UI-design-a-case-study'
+              target='_blank'
+              className='flex items-center w-max px-4 py-2.5 rounded-[5px] rounded-br-none bg-[#2AB090] mt-8 hover:*:'
+            >
+              <span className='text-white font-bold'>View case study</span>{' '}
+              <img
+                src='/icons/angle-right-white.svg'
+                alt='icon'
+                className='ml-2.5'
+              />
+            </a>
+          </div>
+          <div className='flex justify-end'>
+            <Image
+              src='/images/case-studies/aguda.png'
+              alt='case-study'
+              width={540}
+              height={400}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS SECTION */}
+      <section id='testimonials' className='h-[50vh] text-2xl bg-gray-500'>
+        <h1>Testimonials Section</h1>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section id='contact' className='h-[50vh] text-2xl bg-gray-600'>
+        <h1>Contact Section</h1>
+      </section>
+    </main>
   );
 }
