@@ -207,8 +207,17 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section id='testimonials' className='h-[50vh] text-2xl bg-gray-500'>
-        <h1>Testimonials Section</h1>
+      <section id='testimonials' className='bg-transparent px-16 py-14'>
+        <div className='text-white text-center flex justify-center w-full'>
+          <div className='w-[45%]'>
+            <h3 className='text-4xl font-bold'>Testimonials</h3>
+            <p className='text-lg mt-3'>
+              What They’re Saying About My Work. Stories from clients and
+              collaborators about how our partnership created meaningful
+              results.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* CONTACT SECTION */}
