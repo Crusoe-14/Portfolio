@@ -71,3 +71,25 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.gradient-border {
+  position: relative;
+  border-radius: 6px;
+  background: linear-gradient(270deg, #00ffea -0.03%, #ffc700 99.97%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  padding: 1px;
+  color: white;
+
+  /* border: 1px solid;
+  border-image-source: linear-gradient(270deg, #00FFEA -0.03%, #FFC700 99.97%);
+  border-image-slice: 1;
+  border-radius: 10px !important; */
+}
+
+.content {
+  border-radius: 16px; /* Same radius as border */
+  color: white; /* Your inner content's background */
+}
