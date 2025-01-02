@@ -18,10 +18,18 @@ const Footer = () => {
             remotely from Abuja, Nigeria.
           </p>
           <div className="mt-6">
-            <Link href="/" className="block text-white text-lg">
+            <Link
+              href="mailto:iboyo.okwong@gmail.com"
+              className="text-white text-lg flex items-center gap-4"
+            >
+              <img src="/icons/message.svg" alt="icon" />
               iboyo.okwong@gmail.com
             </Link>
-            <Link href="/" className="block text-white text-lg mt-3">
+            <Link
+              href="tel:+2348136191067"
+              className="text-white text-lg flex items-center gap-4 mt-3"
+            >
+              <img src="/icons/call.svg" alt="icon" />
               +234-813 619 1067
             </Link>
             <div className="flex items-center gap-3 mt-4">

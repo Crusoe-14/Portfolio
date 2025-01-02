@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* CASE STUDIES SECTION */}
-      <section id="case-studies" className="bg-transparent px-16 py-14">
+      <section id="caseStudies" className="bg-transparent px-16 py-14">
         <div className="text-white text-center flex justify-center w-full">
           <div className="w-[45%]">
             <h3 className="text-4xl font-bold">Case Studies</h3>

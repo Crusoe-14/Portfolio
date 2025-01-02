@@ -51,9 +51,9 @@ const Navbar = () => {
           <span>Work</span>
         </Link>
         <Link
-          href='#case-studies'
+          href='#caseStudies'
           className={`text-[#D0E6FF] ${
-            activeSection === 'case-studies' ? 'opacity-100' : 'opacity-30'
+            activeSection === 'caseStudies' ? 'opacity-100' : 'opacity-30'
           }`}
         >
           <span>Case Studies</span>

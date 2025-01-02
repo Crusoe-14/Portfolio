@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-// import { contactUs } from "@/api/contact";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
+  const { toast } = useToast();
 
   const formik = useFormik({
     initialValues: {
@@ -25,12 +27,26 @@ const ContactForm = () => {
       setLoading(true);
       console.log(values);
       try {
-        // await contactUs(values);
-        // triggerAlert("Your message has been sent successfully!", "success");
+        await emailjs.send(
+          "service_3uv64gf",
+          "template_pkr9be5",
+          {
+            email: values.email,
+            request: values.request,
+            message: values.message,
+          },
+          "wAGnrheDKHTnBYmTm"
+        );
+        toast({
+          description: "Your message has been sent successfully!",
+        });
         resetForm();
       } catch (error) {
-        triggerAlert("Failed to send message. Please try again!", "error");
-        console.error("Contact form submission failed:", error);
+        console.error("Failed to send message:", error);
+        toast({
+          variant: "destructive",
+          description: "Failed to send message. Please try again!",
+        });
       } finally {
         setLoading(false);
       }

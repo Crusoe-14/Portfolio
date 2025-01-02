@@ -18,7 +18,7 @@ export function Works() {
     <Carousel
       plugins={[
         Autoplay({
-          delay: 6000,
+          delay: 7000,
         }),
       ]}
       opts={{
