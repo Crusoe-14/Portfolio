@@ -2,7 +2,7 @@ import React from "react";
 
 const Brands = () => {
   return (
-    <div className="bg-white p-8 rounded-lg rounded-br-none grid grid-cols-7 gap-8">
+    <div className="bg-white p-8 rounded-lg rounded-br-none grid  grid-cols-2 md:grid-cols-7 gap-8">
       <img src="/brands/brand1.svg" alt="brand" />
       <img src="/brands/brand2.svg" alt="brand" />
       <img src="/brands/brand3.svg" alt="brand" />

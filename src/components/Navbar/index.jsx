@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='px-16 flex items-center justify-between py-3 sticky top-0 z-50 bg-[#020203]'>
+    <nav className='px-16 hidden lg:flex items-center justify-between py-3 sticky top-0 z-50 bg-[#020203]'>
       <div>
         <Link href='/' className='text-[#D0E6FF] font-bold text-[28px]'>
           <span>Godwin Okwong</span>

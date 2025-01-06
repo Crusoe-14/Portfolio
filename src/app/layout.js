@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import NavbarMobile from "@/components/NavbarMobile";
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className={`${spaceMono.variable}`}>
         <Toaster />
         <Navbar />
+        <NavbarMobile />
         {children}
         <Footer />
       </body>

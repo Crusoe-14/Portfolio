@@ -54,7 +54,7 @@ const ContactForm = () => {
   });
 
   return (
-    <section className="w-screen md:w-[504.42px] bg-transparent md:rounded-[10px] px-6 md:px-12 py-16">
+    <section className="w-screen md:w-[504.42px] bg-transparent py-6 md:py-16">
       <div className="mt-6">
         <form onSubmit={formik.handleSubmit} className="w-full">
           <div className="mb-6">
