@@ -13,11 +13,11 @@ const ContactForm = () => {
   const formik = useFormik({
     initialValues: {
       email: "",
-      request: "",
+      name: "",
       message: "",
     },
     validationSchema: Yup.object({
-      request: Yup.string().required("This field is required"),
+      name: Yup.string().required("Name is required"),
       email: Yup.string()
         .email("Invalid email address")
         .required("Email is required"),
@@ -28,14 +28,14 @@ const ContactForm = () => {
       console.log(values);
       try {
         await emailjs.send(
-          "service_3uv64gf",
-          "template_pkr9be5",
+          'service_3uv64gf',
+          'template_pkr9be5',
           {
-            email: values.email,
-            request: values.request,
+            sender_name: values.name,
+            sender_email: values.email,
             message: values.message,
           },
-          "wAGnrheDKHTnBYmTm"
+          'wAGnrheDKHTnBYmTm'
         );
         toast({
           description: "Your message has been sent successfully!",
@@ -54,75 +54,75 @@ const ContactForm = () => {
   });
 
   return (
-    <section className="w-screen md:w-[504.42px] bg-transparent py-6 md:py-16">
-      <div className="mt-6">
-        <form onSubmit={formik.handleSubmit} className="w-full">
-          <div className="mb-6">
-            <label htmlFor="email" className="block mb-2 text-lg text-white">
+    <section className='w-screen md:w-[504.42px] bg-transparent py-6 md:py-16'>
+      <div className='mt-6'>
+        <form onSubmit={formik.handleSubmit} className='w-full'>
+          <div className='mb-6'>
+            <label htmlFor='name' className='block mb-2 text-lg text-white'>
+              Name
+            </label>
+            <input
+              type='text'
+              id='name'
+              {...formik.getFieldProps('name')}
+              className='bg-white rounded-md rounded-br-none border border-white text-black text-base focus:outline-none focus:ring-transparent focus:border-[#FFA217] block w-full p-3'
+              placeholder='Please enter your name'
+            />
+            {formik.touched.name && formik.errors.name ? (
+              <div className='text-red-500 text-xs mt-1'>
+                {formik.errors.name}
+              </div>
+            ) : null}
+          </div>
+
+          <div className='mb-6'>
+            <label htmlFor='email' className='block mb-2 text-lg text-white'>
               Email
             </label>
             <input
-              type="email"
-              id="email"
-              {...formik.getFieldProps("email")}
-              className="bg-white rounded-md rounded-br-none border border-white text-black text-base focus:outline-none focus:ring-transparent focus:border-[#FFA217] block w-full p-3"
-              placeholder="Please enter your email"
+              type='email'
+              id='email'
+              {...formik.getFieldProps('email')}
+              className='bg-white rounded-md rounded-br-none border border-white text-black text-base focus:outline-none focus:ring-transparent focus:border-[#FFA217] block w-full p-3'
+              placeholder='Please enter your email'
             />
             {formik.touched.email && formik.errors.email ? (
-              <div className="text-red-500 text-xs mt-1">
+              <div className='text-red-500 text-xs mt-1'>
                 {formik.errors.email}
               </div>
             ) : null}
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="request" className="block mb-2 text-lg text-white">
-              Request
-            </label>
-            <input
-              type="text"
-              id="request"
-              {...formik.getFieldProps("request")}
-              className="bg-white rounded-md rounded-br-none border border-white text-black text-base focus:outline-none focus:ring-transparent focus:border-[#FFA217] block w-full p-3"
-              placeholder="Enter subject of request"
-            />
-            {formik.touched.request && formik.errors.request ? (
-              <div className="text-red-500 text-xs mt-1">
-                {formik.errors.request}
-              </div>
-            ) : null}
-          </div>
-
-          <div className="mb-6 flex flex-col">
-            <label htmlFor="message" className="block mb-2 text-lg text-white">
+          <div className='mb-6 flex flex-col'>
+            <label htmlFor='message' className='block mb-2 text-lg text-white'>
               Message
             </label>
             <textarea
-              id="message"
-              {...formik.getFieldProps("message")}
-              rows="4"
-              className="bg-white rounded-md rounded-br-none border border-white text-black text-base focus:outline-none focus:ring-transparent focus:border-[#FFA217] block w-full p-3"
-              placeholder="Enter your message"
+              id='message'
+              {...formik.getFieldProps('message')}
+              rows='4'
+              className='bg-white rounded-md rounded-br-none border border-white text-black text-base focus:outline-none focus:ring-transparent focus:border-[#FFA217] block w-full p-3'
+              placeholder='Enter your message'
             ></textarea>
             {formik.touched.message && formik.errors.message ? (
-              <div className="text-red-400 text-xs mt-1">
+              <div className='text-red-400 text-xs mt-1'>
                 {formik.errors.message}
               </div>
             ) : null}
           </div>
 
           <button
-            type="submit"
-            className="px-5 py-3 bg-[#FFA217] rounded-md rounded-br-none w-full justify-center items-center flex gap-3"
+            type='submit'
+            className='px-5 py-3 bg-[#FFA217] rounded-md rounded-br-none w-full justify-center items-center flex gap-3'
             disabled={loading}
           >
-            <span className="text-center text-lg text-[#020203] font-bold">
-              {loading ? "Sending..." : "Submit"}
+            <span className='text-center text-lg text-[#020203] font-bold'>
+              {loading ? 'Sending...' : 'Submit'}
             </span>
             <img
-              src="/icons/angle-right-black.svg"
-              alt="icon"
-              className="ml-2"
+              src='/icons/angle-right-black.svg'
+              alt='icon'
+              className='ml-2'
             />
           </button>
         </form>
