@@ -44,7 +44,7 @@ export function Testimonials() {
                     className='flex-shrink-0 h-3 md:h-auto'
                   />
                 </div>
-                <p className='text-white text-xs sm:text-lg px-2 sm:px-6 text-justify md:text-left'>
+                <p className='text-white text-xs sm:text-lg px-2 sm:px-6'>
                   Working with Godwin was an absolute game-changer for our
                   e-commerce platform. The sleek, user-friendly design they
                   delivered has significantly improved our customers' shopping
@@ -91,7 +91,7 @@ export function Testimonials() {
                     className='flex-shrink-0 h-3 md:h-auto'
                   />
                 </div>
-                <p className='text-white text-xs sm:text-lg px-2 sm:px-6 text-justify md:text-left'>
+                <p className='text-white text-xs sm:text-lg px-2 sm:px-6'>
                   We hired Godwin to join our team of developers for our mobile
                   app, and they exceeded all expectations. From the intuitive
                   navigation to the visually stunning interface, everything was
@@ -138,7 +138,7 @@ export function Testimonials() {
                     className='flex-shrink-0 h-3 md:h-auto'
                   />
                 </div>
-                <p className='text-white text-xs sm:text-lg px-2 sm:px-6 text-justify md:text-left'>
+                <p className='text-white text-xs sm:text-lg px-2 sm:px-6'>
                   Our SaaS dashboard was outdated and difficult to use, but
                   Godwin turned it into a seamless and modern experience. His
                   attention to detail and focus on usability have been
@@ -186,7 +186,7 @@ export function Testimonials() {
                     className='flex-shrink-0 h-3 md:h-auto'
                   />
                 </div>
-                <p className='text-white text-xs sm:text-lg px-2 sm:px-6 text-justify md:text-left'>
+                <p className='text-white text-xs sm:text-lg px-2 sm:px-6'>
                   From wireframes to prototypes, Godwin ensured every step of
                   the design process was collaborative and insightful. His
                   usability testing uncovered pain points we hadn’t noticed, and
@@ -233,7 +233,7 @@ export function Testimonials() {
                     className='flex-shrink-0 h-3 md:h-auto'
                   />
                 </div>
-                <p className='text-white text-xs sm:text-lg px-2 sm:px-6 text-justify md:text-left'>
+                <p className='text-white text-xs sm:text-lg px-2 sm:px-6'>
                   As a nonprofit, we needed a website that was not only
                   functional but also told our story. Godwin crafted a design
                   that captured our vision perfectly. The site is now more
@@ -280,7 +280,7 @@ export function Testimonials() {
                     className='flex-shrink-0 h-3 md:h-auto'
                   />
                 </div>
-                <p className='text-white text-xs sm:text-lg px-2 sm:px-6 text-justify md:text-left'>
+                <p className='text-white text-xs sm:text-lg px-2 sm:px-6'>
                   We needed a cohesive design system to unify our products, and
                   Godwin delivered beyond expectations. He created a robust,
                   scalable design library that our team can use across projects.
