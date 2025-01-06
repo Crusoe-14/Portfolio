@@ -145,7 +145,7 @@ export default function Home() {
               <h3 className='text-lg md:text-[28px] font-bold'>
                 Marigold construction and Remodelling
               </h3>
-              <p className='text-sm sm:text-lg mt-4'>
+              <p className='text-sm sm:text-lg mt-4 text-justify md:text-left'>
                 Marigold has transformed visions and ideas into steel, masonry,
                 and concrete realities. Our clients represent a broad spectrum
                 of industries and business sectors, allowing us the opportunity
@@ -204,17 +204,17 @@ export default function Home() {
               <h3 className='text-lg md:text-[28px] font-bold'>
                 Improving X’s (FKA Twitter) UI for a better user experience
               </h3>
-              <p className='text-sm sm:text-lg mt-4'>
+              <p className='text-sm sm:text-lg mt-4 text-justify md:text-left'>
                 What if X users were able to find exactly what it is they are
                 looking for when searching for topics of interest or looking up
                 the trending topics?
               </p>
-              <p className='text-sm sm:text-lg mt-4'>
+              <p className='text-sm sm:text-lg mt-4 text-justify md:text-left'>
                 What if X had an algorithm that could narrow down a user’s
                 search result to the exact or related content the user is
                 searching for, filtering all unrelated contents?
               </p>
-              <p className='text-sm sm:text-lg mt-4'>
+              <p className='text-sm sm:text-lg mt-4 text-justify md:text-left'>
                 Follow this case study to find out.
               </p>
             </div>
@@ -252,13 +252,13 @@ export default function Home() {
               <h3 className='text-lg md:text-[28px] font-bold'>
                 Ayuda Web UI Design
               </h3>
-              <p className='text-sm sm:text-lg mt-4'>
+              <p className='text-sm sm:text-lg mt-4 text-justify md:text-left'>
                 Ayuda is a website that intends to allow users search for and
                 seek professional help or services from certified professionals
                 online. Ayuda is derived from the Spanish interpretation of the
                 word 'Help'.
               </p>
-              <p className='text-sm sm:text-lg mt-4'>
+              <p className='text-sm sm:text-lg mt-4 text-justify md:text-left'>
                 Ayuda doesn’t just let you hire freelancers; you get to hire
                 offline service providers as well: Handymen, Dog walkers,
                 Nannies and babysitters, mechanics, gardeners, etc. Ayuda brings

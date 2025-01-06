@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer>
       <div className='grid grid-cols-1 md:grid-cols-3 items-center justify-between px-6 sm:px-12 md:px-16 py-10'>
@@ -34,7 +36,7 @@ const Footer = () => {
                 className='text-white text-lg flex items-center gap-4 mt-3'
               >
                 <img src='/icons/call.svg' alt='icon' />
-                +234-813 619 1067
+                +234 813 619 1067
               </Link>
               <div className='flex items-center gap-3 mt-4'>
                 <a href={'https://dribbble.com/Crusoe14'} target='_blank'>
@@ -74,7 +76,9 @@ const Footer = () => {
           <span>Made with</span>{' '}
           <img src='/icons/red-heart.svg' alt='red-heart' className='ml-2' />
         </div>
-        <p className='text-center text-white mt-3'>Godwin Okwong @ 2024</p>
+        <p className='text-center text-white mt-3'>
+          Godwin Okwong @ {currentYear}
+        </p>
       </div>
     </footer>
   );
